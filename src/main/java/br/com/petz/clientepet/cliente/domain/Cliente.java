@@ -37,7 +37,7 @@ public class Cliente {
 	private String telefone;
 	private Sexo sexo;
 	@NotNull
-	private LocalDate dataNacimento;
+	private LocalDate dataNascimento;
 	@CPF
 	private String cpf;
 	@NotNull
@@ -47,14 +47,14 @@ public class Cliente {
 	private LocalDateTime dataHoraUltimaAlteracao;
 	
 	private Cliente(@NotBlank String nomeCompleto, @NotBlank @Email String email, @NotBlank String celular,
-			String telefone, Sexo sexo, @NotNull LocalDate dataNacimento, @CPF String cpf,
+			String telefone, Sexo sexo, @NotNull LocalDate dataNascimento, @CPF String cpf,
 			@NotNull Boolean aceitaTermos) {
 		this.nomeCompleto = nomeCompleto;
 		this.email = email;
 		this.celular = celular;
 		this.telefone = telefone;
 		this.sexo = sexo;
-		this.dataNacimento = dataNacimento;
+		this.dataNascimento = dataNascimento;
 		this.cpf = cpf;
 		this.aceitaTermos = aceitaTermos;
 		this.dataHoraDoCadastro = LocalDateTime.now();
