@@ -9,9 +9,11 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.br.CPF;
 
 import br.com.petz.clientepet.cliente.domain.Sexo;
+import lombok.Builder;
 import lombok.Value;
 
 @Value
+@Builder
 public class ClienteRequest {
 
 	@NotBlank
